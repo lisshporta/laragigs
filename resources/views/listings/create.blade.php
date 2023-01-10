@@ -122,7 +122,7 @@
             type="number"
             class="border border-gray-200 rounded p-2 w-full"
             name="salary"
-            placeholder="Yearly salary"
+            placeholder="Yearly salary (optional)"
             value="{{old('salary')}}"
 
         />

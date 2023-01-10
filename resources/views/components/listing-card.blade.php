@@ -17,7 +17,11 @@
                 
             <div class="text-lg mt-4">
                 <i class="fa-solid fa-location-dot"></i> {{$listing->location}}
+                @if ($listing->salary == null)
+                <i class="fa fa-euro ml-2"></i> Salary Not Shown
+                @else
                 <i class="fa fa-euro ml-2"></i> {{$listing->salary}} 
+                @endif
             </div>
             
         </div>

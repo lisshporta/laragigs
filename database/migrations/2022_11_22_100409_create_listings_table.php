@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('email');
             $table->string('website');
-            $table->integer('salary');
+            $table->integer('salary')->nullable();
             $table->longText('description');
             $table->timestamps();
         });

@@ -114,6 +114,23 @@
             <p class="text-red-500 text-xs mt-1">{{$message}}</p>
         @enderror
         </div>
+
+        <div class="mb-6">
+            <label for="salary" class="inline-block text-lg mb-2">
+                Salary
+            </label>
+            <input
+                type="text"
+                class="border border-gray-200 rounded p-2 w-full"
+                name="salary"
+                placeholder="Yearly Salary"
+                value="{{$listing->salary}}"
+    
+            />
+            @error('salary')
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+        @enderror
+        </div>
     
         <div class="mb-6">
             <label for="logo" class="inline-block text-lg mb-2">
